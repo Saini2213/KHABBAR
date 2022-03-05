@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".DetailsActivity">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        >
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+             app:cardElevation="8dp"
+            android:layout_margin="8dp"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="8dp"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/text_Deatil_title"
+                    android:textColor="@color/blackin"
+                    android:textStyle="bold"
+                    android:textSize="26sp"
+                    ></TextView>
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:id="@+id/img_Detail_News"
+                    android:scaleType="fitXY"
+                    android:layout_marginTop="8dp"
+                    android:src="@drawable/not_avaialable"
+                    ></ImageView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/text_Detail_author"
+                    android:layout_marginTop="6dp"
+                    android:textColor="@color/purple_200"
+                    android:textSize="16sp"
+                    ></TextView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/text_Detail_time"
+                    android:layout_marginTop="6dp"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    ></TextView>
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_Details_details"
+            android:textSize="22sp"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/black"
+            ></TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_Detail_content"
+            android:layout_marginTop="6dp"
+            android:textColor="@color/blackin"
+            android:textSize="20sp"
+            ></TextView>
+    </LinearLayout>
+</ScrollView>
+</LinearLayout>
